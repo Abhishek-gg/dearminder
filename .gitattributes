@@ -1,2 +1,18 @@
-# Auto detect text files and perform LF normalization
+# Normalize text files and prevent conflicts in line endings
 * text=auto
+
+# Force specific formats
+*.html text eol=lf
+*.css  text eol=lf
+*.js   text eol=lf
+*.json text eol=lf
+
+# Treat binary files correctly
+*.png binary
+*.jpg binary
+*.gif binary
+*.svg binary
+
+# Prevent Git from auto-transforming `.sh` or `.bat` scripts
+*.sh text eol=lf
+*.bat text eol=crlf
